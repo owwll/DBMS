@@ -20,3 +20,22 @@ connect c##24CE137/dhruvin2907;
 -- this will fail becaue we are try on the system user so we have to first exit the sql puls then we have to login back to system user then we have to grant all privileges to that user 
 
 GRANT ALL privileges TO c##24CE137;
+
+-- now we will create table of employees
+
+create table employees
+  (
+     emp_id NUMBER PRIMARY KEY,
+     name VARCHAR2(100) NOT NULL
+  );
+
+-- do commit for store what you build
+commit;
+
+-- now we will use unique for give unique value in email collum 
+
+create table employees_1
+  (
+       emp_id NUMBER PRIMARY KEY,
+       email VARCHAR2(150) UNIQUE
+  );
