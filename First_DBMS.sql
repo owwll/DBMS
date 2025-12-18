@@ -53,3 +53,6 @@ set pagesize = 500;
 set linesize = 500;
 column columnname fromate A5;
 column columnname fromate A6;
+
+--to show table property write describe
+DESCRIBE tablename;
