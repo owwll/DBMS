@@ -36,6 +36,20 @@ commit;
 
 create table employees_1
   (
-       emp_id NUMBER PRIMARY KEY,
-       email VARCHAR2(150) UNIQUE
+     emp_id NUMBER PRIMARY KEY,
+     email VARCHAR2(150) UNIQUE
   );
+
+-- now we will add check property while creating table 
+create table employes_2
+(
+  emp_id NUMBER PRIMARY KEY,
+  email VARCHAR(200) NOT NULL UNIQUE,
+  age NUMBER CHECK (age > 0)
+);
+
+-- fromate table in oracle
+set pagesize = 500;
+set linesize = 500;
+column columnname fromate A5;
+column columnname fromate A6;
