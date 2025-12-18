@@ -66,3 +66,9 @@ INSERT INTO borrow_137  VALUES (311 ,'SUNIL', 'DHARAMPETH', 3000.00);
 INSERT INTO borrow_137  VALUES (321 ,'MADHURI' ,'ANDHERI' ,2000.00);
 INSERT INTO borrow_137  VALUES (375, 'PRMOD', 'VIRAR', 8000.00);
 INSERT INTO borrow_137  VALUES (481 ,'KRANTI' ,'NEHRU PLACE', 3000.00);
+
+--show all value in database 
+select * from employee_137;
+select * from job_137;
+select * from deposit_137;
+select * from borrow_137;
