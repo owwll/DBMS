@@ -41,7 +41,7 @@ INSERT INTO employee_137 (emp_no , emp_name , emp_sal , emp_comm , dept_no )
 INSERT INTO employee_137  VALUES (103 , 'Adama', 1100, 425, 20);
 INSERT INTO employee_137  VALUES (104, 'Aman', 3000, ,15);
 INSERT INTO employee_137  VALUES (105, 'Anita', 5000 ,5000 , 10);
-INSERT INTO employee_137  VALUES (106, 'anamika' , 2975 ,  , 30);
+INSERT INTO employee_137  VALUES (106, 'anamika' , 2975 , null , 30);
 
 --insert into job_137 table 
 INSERT INTO job_137  VALUES ('IT_PROG' , 'Programmer', 4000, 10000);
@@ -65,7 +65,7 @@ INSERT INTO borrow_137  VALUES (206, 'MEHUL', 'AJNI' ,5000.00);
 INSERT INTO borrow_137  VALUES (311 ,'SUNIL', 'DHARAMPETH', 3000.00);
 INSERT INTO borrow_137  VALUES (321 ,'MADHURI' ,'ANDHERI' ,2000.00);
 INSERT INTO borrow_137  VALUES (375, 'PRMOD', 'VIRAR', 8000.00);
-INSERT INTO borrow_137  VALUES (481 ,'KRANTI' ,'NEHRU PLACE', 3000.00);
+INSERT INTO borrow_137  VALUES (481 ,'KRANTI' ,'NEHRU', 3000.00);
 
 --show all value in database 
 select * from employee_137;
