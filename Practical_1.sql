@@ -76,5 +76,5 @@ select * from borrow_137;
 -- if you want to show the property of the table then write 
 DESC employee_137;
 DESC job_137;
-DESC deposite_137;
+DESC deposit_137;
 DESC borrow_137;
