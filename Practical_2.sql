@@ -26,3 +26,18 @@ DESC sup2_137;
 DROP TABLE sup1_137;
 DESC sup1_137;
 
+-- Add one column phone to an employee with size of column is Varchar2(10) and verify
+ALTER TABLE employee_137 ADD phone_no Varchar2(10);
+desc employee_137;
+
+-- Modify column phone and change type to char(10) and verify.
+ALTER TABLE employee_137 MODIFY phone_no Char(10);
+desc employee_137;
+
+-- Delete employee_name column from sup2 and verify;
+ALTER TABLE suplier2_137 DROP COLUMN employee_name;
+SELECT * from sup2_137;
+
+-- Rename the column salary to new_sal in sup2 and verify.
+ALTER TABLE suplier2_137 RENAME COLUMN emp_sal TO new_sal;
+desc suplier2_137;
