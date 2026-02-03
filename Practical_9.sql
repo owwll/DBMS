@@ -27,3 +27,11 @@ create table customer_137 (
     rating number(3) default 10,
     snum number(4) references salespeople_137(snum)
   );
+
+
+insert into customer_137 values (1,'pruthvi','surat',10,1);
+insert into customer_137 (cnum , cname , city , snum)values (2,'dhruvin','surat',1);
+insert into customer_137 values (3,null ,'surat',8 , 2);
+insert into customer_137 values (3,'mahavir' ,'surat',8 ,3);
+insert into customer_137(cnum , cname,snum) values (3 , 'mahavir',2);
+
