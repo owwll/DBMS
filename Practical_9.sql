@@ -48,4 +48,15 @@ insert into order_137 (orderno , odate , cnum , snum) values (2 , '12/5/2005', 3
 insert into order_137 (orderno , amount , cnum , snum) values (3 , 452, 3,2);
 select * from order_137;
 
+create table client_master_137 (client_no varchar2(6) primary key , client_name varchar2(10));
+create table salesman_master( sales_no varchar2(6) primary key);
+create table sales_order_137(
+    order_no varchar2(6) primary key check (order_no like 'O%'),
+    order_date date,
+    client_no varchar2(6) references client_master_137(client_no),
+    dely_addr varchar2(25),
+    salesman_no references salesman_master(sales_no),
+    dely_type char default 'F' check( dely_type in ('F' ,'P')),
+    order_status varchar2(20) check (order_status in ('in  process' , 'fulfilled' , 'backorder','cancelled'))
+);
 
