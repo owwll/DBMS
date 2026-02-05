@@ -60,3 +60,12 @@ create table sales_order_137(
     order_status varchar2(20) check (order_status in ('in  process' , 'fulfilled' , 'backorder','cancelled'))
 );
 
+insert into client_master_137 values('C123' , 'Dhruvin');
+insert into salesman_master values ('S123');
+insert into sales_order_137 values ('O123' , '22 feb 2024' , 'C123' , 'surat','S123','P' , 'in  process');
+insert into sales_order_137 values ('O23' , '22 feb 2024' , 'C123' , 'surat','S12','P' , 'in  process');
+insert into sales_order_137 values ('123' , '22 feb 2024' , 'C123' , 'surat','S12','P' , 'in  process');
+insert into sales_order_137(order_no , client_no , dely_addr , salesman_no , dely_type , order_status) values ('O2033'  , 'C123' , 'surat','S12','P' , 'in  process');
+insert into sales_order_137(order_no , client_no , dely_addr , salesman_no , dely_type , order_status) values ('O2033'  , 'C123' , 'surat','S123','P' , 'in  process');
+select * from sales_order_137;
+
