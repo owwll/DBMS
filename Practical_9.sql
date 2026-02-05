@@ -35,3 +35,17 @@ insert into customer_137 values (3,null ,'surat',8 , 2);
 insert into customer_137 values (3,'mahavir' ,'surat',8 ,3);
 insert into customer_137(cnum , cname,snum) values (3 , 'mahavir',2);
 
+create table order_137 (
+    orderno number(4) primary key ,
+    amount number(5),
+    odate varchar2(10) ,
+    cnum number(4) references customer_137(cnum),
+    snum number(4) references salespeople_137(snum)
+    );
+insert into order_137 values (1,120,'2/4/2026',1,1);
+insert into order_137 values (2,110 , '2/04/2026',5,1);
+insert into order_137 (orderno , odate , cnum , snum) values (2 , '12/5/2005', 3,2);
+insert into order_137 (orderno , amount , cnum , snum) values (3 , 452, 3,2);
+select * from order_137;
+
+
