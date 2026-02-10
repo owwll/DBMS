@@ -69,3 +69,16 @@ insert into sales_order_137(order_no , client_no , dely_addr , salesman_no , del
 insert into sales_order_137(order_no , client_no , dely_addr , salesman_no , dely_type , order_status) values ('O2033'  , 'C123' , 'surat','S123','P' , 'in  process');
 select * from sales_order_137;
 
+create table salesman_master_137(
+    snum varchar2(6) check (snum like 'S%'),
+    sname varchar2(20) not null,
+    address varchar2(30) not null,
+    city varchar2(20),
+    pincode varchar2(8),
+    state varchar2(20),
+    sal_amt number(8,2) not null check (sal_amt > 0 ),
+    ytd_sales number(6,2) not null check (ytd_sales > 0) ,
+    tgt_sales number(6,2) not null
+);
+
+insert into salesman_master_137 values ('S12345' , 'Dhruvin' , 'sarthana' , 'surat' , 395006, 'gujrat' , 12345, 2454,7645);
