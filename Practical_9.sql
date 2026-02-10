@@ -82,3 +82,5 @@ create table salesman_master_137(
 );
 
 insert into salesman_master_137 values ('S12345' , 'Dhruvin' , 'sarthana' , 'surat' , 395006, 'gujrat' , 12345, 2454,7645);
+
+Create table c_master_137 ( client_no varchar2(6) primary key check (client_no like ‘C%’),  name varchar2(20) not null , address varchar2(30) , city varchar2(15) , pincode number(8) , state varchar2(15) , bal_due number(10 , 2) );
